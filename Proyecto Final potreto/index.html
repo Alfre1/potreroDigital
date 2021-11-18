@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title> Imperio - Radio online </title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes">
+	<script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+	<a href="https://wa.me/2612550242" class="btn-wsp" target="_blank">
+		<i class="fa fa-whatsapp icono"></i>
+		
+	</a>
+<header>
+	<div class="container">
+		<div class="row top">
+			<!-- en esta linea cambiamos nuestro logo. -->
+			<div class="col-md-4"><a href="#home" data-ancla="home" class="off">
+				<img src="images/radiologo.jpg" alt="" class="logo"></a></div>
+			<div class="col-md-3"></div>
+			<div class="col-md-5">
+				<ul class='botonera'>
+					<li><a href="#nosotros" data-ancla="nosotros">Quienes somos</a></li>
+					<li><a href="#servicios" data-ancla="servicios">Productos</a></li>
+					<li><a href="#contacto" data-ancla="contacto">Contacto</a></li>
+
+				</ul>
+
+			</div>
+		</div>
+	</div>
+</header>
+
+<div class="principal vertical-centered-text" id="home">
+	<div class="col-md-8 cta"><h1>Radio Imperio</h1> 
+			<h4>Somos una radio Mendocina nueva con el objetivo de entretener e informar a las familias mendocinas donde se pasa musica para todas las edades y gustos!! </h4>
+			<p>Escuchanos online haciendo click en el boton que te dejamos aca abajo y empeza a disfrutar de la mejor musica de la mano de Imperio!</p>
+  <a  href="https://radioarg.com/imperio-guaymallen/" class="btn btn-primary orange">ESCUCHANOS</a>
+
+
+		</div>
+</div>
+
+<div class="nosotros orange" id="nosotros">
+	<div class="container">
+		<h1>Sobre nosotros</h1>
+		<p>Imperio es una radio que fue fundada en 2007 en la ciudad de Mendoza, Guaymallen con el fin de entretener e informar a las familias mendocinas. Donde vas a escuchar la mejor musica y los 
+			mejores programas conducidos por gente que le pone toda la onda para acompañarlos en el dia a dia ya sea en su trabajo, de camino a la escuela y demas.  
+</p>
+	</div>
+</div>
+
+
+<div class="container servicios" id="servicios">
+	<div class="row">
+		<div class="col-md-12">
+			<h1>Nuestros Servicios</h1>
+		</div>
+	</div>
+	<div class="row images">
+		<div class="col-md-3">
+			<img src="images/mobile-phone-760.svg" alt="">
+			<h3>WhatsApp activo</h3>
+			<p>Contamos con un chat de WhatsApp activo para comunicarnos</p>
+		</div>
+		<div class="col-md-3">
+			<img src="images/microfonoradio.svg.svg" alt="">
+			<h3>Podcast</h3>
+			<p>Eschucha los mejores podcast de Mendoza! </p>
+		</div>
+		<div class="col-md-3">
+			<img src="images/Antenaderadio.svg.svg" alt="">
+			<h3>La mejor señal</h3>
+			<p>Contamos con la mejor señal de Mendoza</p>
+		</div>
+		<div class="col-md-3">
+			<img src="images/logoradio.svg.svg" alt="">
+			<h3>La mejor musica</h3>
+			<p>Ponemos musica de todos los estilos, pone radio imperio y disfruta!!!</p>
+		</div>
+	</div>
+	
+</div>
+
+<footer>
+	<div class="container" id="contacto">
+		<div class="row">
+			<div class="col-md-12">
+					<h1>CONTACTO</h1><br><br>
+
+			</div>
+		</div>
+		<div class="row social">
+		<div class="col-3"></div>	
+					<div class="col-2">
+						<a href="fmimperio995@gmail.com"><img src="images/gmail-logo-2561.svg" alt=""></a></div>
+
+					<div class="col-2">
+						<a href="https://www.facebook.com/fmimperio995mendoza"  target="_blank"><img src="images/facebook-2873.svg" alt=""></a></div>
+
+
+					<div class="col-2">
+						<a target="_blank" href="https://www.instagram.com/alfre_sanchez12/" ><img src="images/instagram-logo-8869.svg" alt=""></a></div>	
+	</div>
+	
+</footer>
+<script
+  src="https://code.jquery.com/jquery-2.2.4.min.js"
+  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+<script>	
+$(document).ready(function() {    
+$('.top a').click(function(e){
+        e.preventDefault();
+        var offset = $($(this).attr('href')).offset().top;
+        $('html, body').animate({scrollTop:offset}, 600);
+        return false;
+    });
+
+});
+	
+</script>
+</body>
+</html>
